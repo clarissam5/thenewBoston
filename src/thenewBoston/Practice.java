@@ -129,4 +129,78 @@ public class Practice {
 		obj.simpleMessage(name);
 	}
 */	
+/*// (16) Many Methods and Instances 
+	public static void main(String args[]) {
+		Scanner input = new Scanner(System.in);
+		Practiceclass object = new Practiceclass();
+		System.out.println("Enter name: ");
+		String temp = input.nextLine();
+		object.setName(temp);
+		//the below will be the string in print saying plus the input form the user 
+		object.saying();
+		
+	}*/
+/*// (17) Constructors
+	public static void main(String args[]) {
+		Practiceclass object = new Practiceclass ("Clarissa");
+		object.saying();
+	}*/
+/*// (18) (19) Nested if Statements
+	public static void main(String args[]) {
+		int age = 60;
+		
+		if (age < 50) {
+			System.out.println("You are young");
+		} 
+		else if (age >= 50) 
+			System.out.println("You are in your 50s");
+			if (age > 75) {
+				System.out.println("you are really old");
+			} else {
+				System.out.println("You are wise.");
+			}
+		}*/
+	
+/*// (20) Conditional Operators
+	public static void main(String args[]) {
+		int age = 20;
+		//Asked a question, answer is yes or not, then after the question mark
+		//It shows the first option if the question is true, if the question is false the 2nd state
+		System.out.println(age > 50 ? "You are old" : "You are young");
+		
+	}*/
+/*// (21) Simple Averaging Program 	
+	public static void main(String args[]) {
+		Scanner input = new Scanner (System.in);
+		int total = 0; 
+		int grade; 
+		int average;
+		int counter = 0;
+			
+		while (counter < 10 ) { //what do we want to do 10 times
+			grade = input.nextInt(); //input 10 grades
+			total = total + grade; //adding them all up 
+			counter ++;
+		}
+		average = total/10;
+		System.out.println("Your average is " + average);
+	}*/
+/*// (22) For Loops
+	public static void main(String args[]) {
+		for (int counter = 1; counter <= 10; counter++ or counter +=3 ) {//takes 3 arguments: where it starts, where it ends, how much you want to incrememnt by 
+				System.out.println(counter);
+			}
+		}*/
+//(23) Compound Interest Program 
+	public static void main(String args[]) {
+		//A = P(1+ R) ^n
+		double amount;
+		double principal = 10000;
+		double rate = .01;
+		
+		for(int day = 1; day <=20; day++) {
+			amount = principal*Math.pow(1 + rate, day);
+			System.out.println(day);
+		}
+	}
 }
